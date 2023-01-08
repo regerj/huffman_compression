@@ -1,9 +1,5 @@
 #pragma once
 
-#include <map>
-#include <fstream>
-#include <iostream>
-
 #include "header.h"
 
 class FileManager {

@@ -30,12 +30,14 @@ std::map<std::string, int> FileManager::generate_map()
     std::string word;
     while(file_handle >> word)
     {
+        std::cout << "word: " << word << std::endl;
         auto iter = my_map.insert(std::pair<std::string, int>(word, 1));
-        if(iter.second)
+        if(!iter.second)
         {
             iter.first->second++;
         }
     }
+    return my_map;
 }
 
 FileManager::~FileManager()

@@ -7,10 +7,10 @@ compressor.o: compressor.cpp
 	$(CC) -c compressor.cpp
 decompressor.o: decompressor.cpp
 	$(CC) -c decompressor.cpp
-file_manager.o: file_manager.cpp
-	$(CC) -c file_manager.cpp
 huffman_code.o: huffman_code.cpp
 	$(CC) -c huffman_code.cpp
+file_manager.o: file_manager.cpp
+	$(CC) -c file_manager.cpp
 main.o: main.cpp
 	$(CC) -c main.cpp
 clean:
