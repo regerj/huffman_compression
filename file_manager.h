@@ -2,7 +2,8 @@
 
 #include "header.h"
 
-class FileManager {
+class FileManager
+{
     public:
         FileManager();
         FileManager(std::string file_name);
