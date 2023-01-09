@@ -13,6 +13,7 @@ This is a very simple compression project which leverages Huffman compression to
 - Add error handling
 - Improve build script to work without explicit python call
 - Merge FileManager and HuffmanCode into a single class that goes directly from plaintext to codelist OR rename FileManager to WordCounter or something a bit more modular
+- Remove makefile, deprecated by improved python build script
 - Add TCP Socket IPC with a compression and decompression server
 
 ## How to Compile:
