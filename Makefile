@@ -1,17 +1,17 @@
 
 CC = g++ -std=c++11
 exe_file = huffman.exe
-$(exe_file): compressor.o decompressor.o file_manager.o huffman_code.o main.o
-	$(CC) compressor.o decompressor.o file_manager.o huffman_code.o main.o -o $(exe_file)
-compressor.o: compressor.cpp
+$(exe_file): bin\compressor.o bin\decompressor.o bin\file_manager.o bin\huffman_code.o bin\main.o
+	$(CC) bin\compressor.o bin\decompressor.o bin\file_manager.o bin\huffman_code.o bin\main.o -o $(exe_file)
+bin\compressor.o: compressor.cpp
 	$(CC) -c compressor.cpp
-decompressor.o: decompressor.cpp
+bin\decompressor.o: decompressor.cpp
 	$(CC) -c decompressor.cpp
-huffman_code.o: huffman_code.cpp
+bin\huffman_code.o: huffman_code.cpp
 	$(CC) -c huffman_code.cpp
-file_manager.o: file_manager.cpp
+bin\file_manager.o: file_manager.cpp
 	$(CC) -c file_manager.cpp
-main.o: main.cpp
+bin\main.o: main.cpp
 	$(CC) -c main.cpp
 clean:
-	rm –f *.out *.o $(exe_file)
+	rm –rfv *.out *.o $(exe_file)
