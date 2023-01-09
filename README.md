@@ -12,6 +12,7 @@ This is a very simple compression project which leverages Huffman compression to
 - Add ability to take file path of plaintext in as command line argument
 - Add error handling
 - Improve build script to work without explicit python call
+- Merge FileManager and HuffmanCode into a single class that goes directly from plaintext to codelist OR rename FileManager to WordCounter or something a bit more modular
 - Add TCP Socket IPC with a compression and decompression server
 
 ## How to Compile:
