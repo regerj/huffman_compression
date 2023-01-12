@@ -1,6 +1,12 @@
 #pragma once
 
-#include "header.h"
+#include <string>
+#include <queue>
+#include <vector>
+#include <map>
+#include <iostream>
+
+#include "binary_tree.h"
 
 // Lord have mercy this is disgusting
 typedef std::priority_queue<std::pair<int, std::string>, std::vector<std::pair<int, std::string>>, std::greater<std::pair<int, std::string>>> CustomQueue;

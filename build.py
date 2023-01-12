@@ -24,10 +24,10 @@ def main():
 
 def build():
     os.mkdir(".\\bin")
-    compile("compressor", True)
-    compile("decompressor", True)
     compile("huffman_code", True)
     compile("file_manager", True)
+    compile("compressor", True)
+    compile("decompressor", True)
     compile("main", True)
     compile("", False)
 

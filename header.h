@@ -10,3 +10,4 @@
 #include "file_manager.h"
 #include "huffman_code.h"
 #include "binary_tree.h"
+#include "compressor.h"
